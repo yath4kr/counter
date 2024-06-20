@@ -8,9 +8,15 @@ function App() {
   const dispatch = useDispatch();
   return (
     <div className="App">
-      <h1>Currently, the count is - {count}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+      <div className="container">
+        <div className="text">
+          <h1>Currently, the count is - {count}</h1>
+        </div>
+        <div className="buttons">
+          <button onClick={() => dispatch(increment())}>+</button>
+          <button onClick={() => dispatch(decrement())}>-</button>
+        </div>
+      </div>
     </div>
   );
 }
